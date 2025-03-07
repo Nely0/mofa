@@ -18,7 +18,7 @@ requirements = [pkg.replace('\n', '') for pkg in all_pkgs if "#" not in pkg]
 test_requirements = []
 
 setup(
-    name='mofa', 
+    name='mofa',
     author="mofa",
     author_email='chenzi00103@gmail.com',
     python_requires='>=3.10',
