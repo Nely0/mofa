@@ -20,7 +20,7 @@ test_requirements = []
 setup(
     name='mofa', 
     author="mofa",
-    author_email='cheng.chen@.net',
+    author_email='chenzi00103@gmail.com',
     python_requires='>=3.10',
     # python_requires='>=3.8',
     classifiers=[
@@ -47,7 +47,7 @@ setup(
     package_dir={'mofa': 'python/mofa'},
     test_suite='tests',
     tests_require=test_requirements,
-    version='0.1.1.dev0',
+    version='0.1.2.dev0',
     zip_safe=False,
     dependency_links=[]
 )
