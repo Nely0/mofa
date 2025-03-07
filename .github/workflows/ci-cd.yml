@@ -34,7 +34,7 @@ jobs:
       - name: Publish to TestPyPI
         if: github.ref == 'refs/heads/main'
         env:
-          TWINE_USERNAME: __token__  # TestPyPI 用户名
+          TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}  # TestPyPI 密码
         run: |
           cd python  
