@@ -36,11 +36,14 @@ setup(
     long_description=readme + '\n\n' + history,
     include_package_data=True,
     keywords='mofa',
-    packages=find_packages(where='python', include=['mofa', 'mofa.*']),
-    package_dir={'mofa': 'python/mofa'},
+    packages=['mofa'],
+    package_dir={'mofa': 'mofa'},
+    # packages=find_packages(where='python', include=['mofa', 'mofa.*']),
+    # package_dir={'mofa': 'python/mofa'},
+    py_modules=['mofa'],
     test_suite='tests',
     tests_require=test_requirements,
-    version='0.1.3',
+    version='0.1.5',
     zip_safe=False,
     dependency_links=[]
 )
