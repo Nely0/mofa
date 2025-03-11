@@ -35,9 +35,8 @@ jobs:
         if: github.ref == 'refs/heads/main'
         env:
           TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.__token__ }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         run: |
           cd python  
-          twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-#          twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+          twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
 
