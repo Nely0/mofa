@@ -39,7 +39,7 @@ setup(
     package_dir={'mofa': 'python/mofa'},
     test_suite='tests',
     tests_require=test_requirements,
-    version='0.1.9',
+    version='0.1.1',
     zip_safe=False,
     dependency_links=[]
 )
