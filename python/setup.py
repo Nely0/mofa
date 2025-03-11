@@ -14,6 +14,7 @@ with open('requirements.txt',encoding='utf-8') as requirements_file:
 requirements = [pkg.replace('\n', '') for pkg in all_pkgs if "#" not in pkg]
 test_requirements = []
 
+
 setup(
     name='mofa-ai',
     author='Cheng Chen, ZongHuan Wu',
